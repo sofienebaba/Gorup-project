@@ -1,0 +1,99 @@
+﻿/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Makes the navbar stick at the top */
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+    /* Navbar list styling */
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    /* Navbar list items */
+    .navbar li {
+        text-align: center;
+    }
+
+    /* Navbar links */
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+    }
+
+        /* Navbar hover effect */
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+/* Section styling */
+.section {
+    padding: 50px 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Different background colors for each section */
+#home {
+    background-color: #f4f4f4;
+}
+
+#causes {
+    background-color: #e2e2e2;
+}
+
+#effects {
+    background-color: #cfcfcf;
+}
+
+#solutions {
+    background-color: #bcbcbc;
+}
+
+#contact {
+    background-color: #a9a9a9;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+    /* Footer social media links */
+    .footer .social-media a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+        .footer .social-media a:hover {
+            text-decoration: underline;
+        }
