@@ -21,6 +21,9 @@ body {
     text-align: center;
 }
 
+h1, h2{
+    text-decoration:underline;
+}
 /* Navbar styling */
 .navbar {
     background: linear-gradient(135deg, #6ec6ff, #03a9f4);
