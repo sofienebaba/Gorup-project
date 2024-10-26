@@ -1,191 +1,135 @@
-﻿
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+﻿/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&family=Orbitron:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* Styling for the body */
 body {
     font-family: 'Merriweather', serif;
     line-height: 1.6;
-    background-color: #f9f9f9; 
+    background-color: #f5f5f5;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-
+/* Navbar styling */
 .navbar {
-    position:sticky;
-    top:0;
-    padding: 2rem;
-    background: linear-gradient(135deg, #81d4fa, #29b6f6); 
-    color: #fff; 
-    width: 100%;
+    background: linear-gradient(135deg, #6ec6ff, #03a9f4);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100vw;
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-
+    /* Navbar list styling */
     .navbar ul {
         list-style: none;
         display: flex;
         justify-content: space-around;
-        padding: 20px 0; 
+        padding: 60px 20px;
         margin: 0;
+        width: 100%;
     }
 
-
-    .navbar li {
-        text-align: center;
-    }
-
-    
+    /* Navbar links */
     .navbar a {
-        color: #fff; 
+        color: #fff;
         text-decoration: none;
-        padding: 15px 25px; 
+        padding: 15px 25px;
         display: block;
-        font-size: 1.2em; 
-        border-radius: 5px; 
-        transition: background 0.3s ease, color 0.3s ease; 
+        font-size: 1.2em;
+        border-radius: 5px;
+        transition: background 0.3s ease, color 0.3s ease;
     }
 
-        
+        /* Navbar hover effect */
         .navbar a:hover {
-            background-color: rgba(255, 255, 255, 0.2); 
-            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
-
+/* Section styling */
 .section {
     padding: 70px 20px;
-    min-height: 100vh;
-    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #e8f0fe; /* Light background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-
-#home {
-    background-color: #e3f2fd; 
+/* Titles styling */
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-#causes {
-    background-color: #bbdefb; 
+/* Paragraph styling */
+p {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1em;
+    margin-bottom: 40px;
 }
 
-#effects {
-    background-color: #90caf9; 
-}
-
-#solutions {
-    background-color: #64b5f6; 
-}
-
-#UNFCCC {
-    background-color: #42a5f5; 
-}
-
-
+/* Footer styling */
 .footer {
-    background-color: #0277bd; 
-    color: #fff; 
+    background-color: #0277bd;
+    color: #fff;
     text-align: center;
-    padding: 60px 20px; 
+    padding: 60px 20px;
     width: 100%;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-
+    /* Footer social media links */
     .footer .social-media a {
-        color: #fff; 
+        color: #fff;
         text-decoration: none;
-        margin: 0 20px; 
-        font-size: 1.5em; 
+        margin: 0 20px;
+        font-size: 1.5em;
         transition: color 0.3s ease;
     }
 
         .footer .social-media a:hover {
-            color: #b3e5fc; 
+            color: #b3e5fc;
         }
 
-
-
-
 /* Media Queries for Large Screens */
-
-
-@media (min-width: 600px) 
-{
+@media (min-width: 600px) {
     .navbar ul {
         justify-content: space-between;
         padding: 15px 30px;
     }
 
-
     .section {
         padding: 100px 50px;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-        .section p {
-            max-width: 600px;
-            font-size: 1.2em;
-        }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    h2 {
-        font-size: 2.5em;
     }
 }
 
-
 /* Media Queries for Mobile Screens */
-
-
-@media (max-width: 600px) 
-{
-
+@media (max-width: 599px) {
     .navbar ul {
         flex-direction: column;
-        padding: 0;
-    }
-
-    .navbar li {
-        margin: 5px 0;
-    }
-
-    .navbar a {
         padding: 10px;
-        font-size: 1.2em;
     }
-
 
     .section {
-        padding: 40px 15px;
-        text-align: center;
-        flex-direction: column;
+        padding: 50px 20px;
     }
 
-        .section h1, .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .section p {
-            font-size: 1em;
-            margin-bottom: 30px;
-        }
-
-
     .footer {
-        padding: 40px 15px; 
+        padding: 40px 15px;
     }
 }
