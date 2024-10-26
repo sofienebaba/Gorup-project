@@ -1,113 +1,120 @@
-﻿/* Basic reset */
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling for the body */
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
-    background-color: #f9f9f9; /* Light background color for the body */
+    background-color: #f9f9f9; 
     color: #333;
 }
 
-/* Navbar styling */
+
 .navbar {
-    background: linear-gradient(135deg, #81d4fa, #29b6f6); /* Gradient for a vibrant look */
-    color: #fff; /* Change text color to white for better contrast */
+    position:sticky;
+    top:0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #81d4fa, #29b6f6); 
+    color: #fff; 
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
-    /* Navbar list styling */
+
     .navbar ul {
         list-style: none;
         display: flex;
         justify-content: space-around;
-        padding: 20px 0; /* Increased padding for a larger navbar */
+        padding: 20px 0; 
         margin: 0;
     }
 
-    /* Navbar list items */
+
     .navbar li {
         text-align: center;
     }
 
-    /* Navbar links */
+    
     .navbar a {
-        color: #fff; /* Ensure link color is white */
+        color: #fff; 
         text-decoration: none;
-        padding: 15px 25px; /* Increased padding for a larger clickable area */
+        padding: 15px 25px; 
         display: block;
-        font-size: 1.2em; /* Slightly larger font size */
-        border-radius: 5px; /* Add rounded corners for links */
-        transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+        font-size: 1.2em; 
+        border-radius: 5px; 
+        transition: background 0.3s ease, color 0.3s ease; 
     }
 
-        /* Navbar hover effect */
+        
         .navbar a:hover {
-            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for hover */
+            background-color: rgba(255, 255, 255, 0.2); 
             border-radius: 5px;
         }
 
-/* Section styling */
+
 .section {
     padding: 70px 20px;
     min-height: 100vh;
     text-align: center;
 }
 
-/* Specific background colors for each section */
+
 #home {
-    background-color: #e3f2fd; /* Light blue for home */
+    background-color: #e3f2fd; 
 }
 
 #causes {
-    background-color: #bbdefb; /* Slightly darker blue for causes */
+    background-color: #bbdefb; 
 }
 
 #effects {
-    background-color: #90caf9; /* Medium blue for effects */
+    background-color: #90caf9; 
 }
 
 #solutions {
-    background-color: #64b5f6; /* Darker blue for solutions */
+    background-color: #64b5f6; 
 }
 
 #UNFCCC {
-    background-color: #42a5f5; /* Even darker blue for contact */
+    background-color: #42a5f5; 
 }
 
-/* Footer styling */
+
 .footer {
-    background-color: #0277bd; /* Darker blue for footer */
-    color: #fff; /* White text color for contrast */
+    background-color: #0277bd; 
+    color: #fff; 
     text-align: center;
-    padding: 60px 20px; /* Increased padding for a larger footer */
+    padding: 60px 20px; 
     width: 100%;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); 
 }
 
-    /* Footer social media links */
+
+
     .footer .social-media a {
-        color: #fff; /* White color for social media links */
+        color: #fff; 
         text-decoration: none;
-        margin: 0 20px; /* Increased margin for better spacing */
-        font-size: 1.5em; /* Larger font size for visibility */
+        margin: 0 20px; 
+        font-size: 1.5em; 
         transition: color 0.3s ease;
     }
 
         .footer .social-media a:hover {
-            color: #b3e5fc; /* Light blue color on hover */
+            color: #b3e5fc; 
         }
 
 
-/* ============================= */
+
+
 /* Media Queries for Large Screens */
-/* ============================= */
+
 
 @media (min-width: 600px) 
 {
@@ -116,7 +123,7 @@ body {
         padding: 15px 30px;
     }
 
-    /* Section layout for larger screens */
+
     .section {
         padding: 100px 50px;
         text-align: left;
@@ -130,7 +137,6 @@ body {
             font-size: 1.2em;
         }
 
-    /* Increase font sizes for headings */
     h1 {
         font-size: 3em;
     }
@@ -140,13 +146,13 @@ body {
     }
 }
 
-/* ============================= */
+
 /* Media Queries for Mobile Screens */
-/* ============================= */
+
 
 @media (max-width: 600px) 
 {
-    /* Navbar styling for mobile */
+
     .navbar ul {
         flex-direction: column;
         padding: 0;
@@ -161,7 +167,7 @@ body {
         font-size: 1.2em;
     }
 
-    /* Section layout for smaller screens */
+
     .section {
         padding: 40px 15px;
         text-align: center;
@@ -178,8 +184,8 @@ body {
             margin-bottom: 30px;
         }
 
-    /* Footer styling */
+
     .footer {
-        padding: 40px 15px; /* Adjusted padding for smaller screens */
+        padding: 40px 15px; 
     }
 }
