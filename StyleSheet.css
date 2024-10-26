@@ -19,17 +19,20 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding-top: 120px; /* Add padding to avoid overlapping with the navbar */
 }
 
-h1, h2{
-    text-decoration:underline;
+h1, h2 {
+    text-decoration: underline;
 }
+
 /* Navbar styling */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     background: linear-gradient(135deg, #6ec6ff, #03a9f4);
     color: #fff;
-    position: sticky;
-    top: 0;
     width: 100vw;
     z-index: 1000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -40,7 +43,7 @@ h1, h2{
         list-style: none;
         display: flex;
         justify-content: space-around;
-        padding: 60px 20px;
+        padding: 20px 20px;
         margin: 0;
         width: 100%;
     }
@@ -123,6 +126,9 @@ p {
 
 /* Media Queries for Mobile Screens */
 @media (max-width: 599px) {
+    body{
+        padding-top:350px;
+    }
     .navbar ul {
         flex-direction: column;
         padding: 10px;
