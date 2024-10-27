@@ -1,14 +1,14 @@
-﻿/* Import Google Fonts */
+﻿
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&family=Orbitron:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Basic reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling for the body */
+
 body {
     font-family: 'Merriweather', serif;
     line-height: 1.6;
@@ -19,16 +19,16 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding-top: 120px; /* Add padding to avoid overlapping with the navbar */
+    padding-top: 120px; 
 }
 
 h1, h2 {
     text-decoration: underline;
 }
 
-/* Navbar styling */
+
 .navbar {
-    position: fixed;
+    position: fixed;  /* using the fixed instead of the sticky since the sticky did not work*/
     top: 0;
     left: 0;
     background: linear-gradient(135deg, #6ec6ff, #03a9f4);
@@ -38,7 +38,7 @@ h1, h2 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-    /* Navbar list styling */
+
     .navbar ul {
         list-style: none;
         display: flex;
@@ -48,7 +48,7 @@ h1, h2 {
         width: 100%;
     }
 
-    /* Navbar links */
+  
     .navbar a {
         color: #fff;
         text-decoration: none;
@@ -59,12 +59,12 @@ h1, h2 {
         transition: background 0.3s ease, color 0.3s ease;
     }
 
-        /* Navbar hover effect */
+        
         .navbar a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
 
-/* Section styling */
+
 .section {
     padding: 70px 20px;
     max-width: 800px;
@@ -75,21 +75,21 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-/* Titles styling */
+
 h1, h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-/* Paragraph styling */
+
 p {
     font-family: 'Space Mono', monospace;
     font-size: 1.1em;
     margin-bottom: 40px;
 }
 
-/* Footer styling */
+
 .footer {
     background-color: #0277bd;
     color: #fff;
@@ -99,7 +99,6 @@ p {
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
 }
 
-    /* Footer social media links */
     .footer .social-media a {
         color: #fff;
         text-decoration: none;
@@ -112,7 +111,6 @@ p {
             color: #b3e5fc;
         }
 
-/* Media Queries for Large Screens */
 @media (min-width: 600px) {
     .navbar ul {
         justify-content: space-between;
@@ -124,7 +122,6 @@ p {
     }
 }
 
-/* Media Queries for Mobile Screens */
 @media (max-width: 599px) {
     body{
         padding-top:350px;
