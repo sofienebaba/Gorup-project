@@ -180,11 +180,11 @@ p {
 
 @media (max-width: 599px) {
     body {
-        padding-top: 350px;
+        padding-top: 90px;
     }
 
     .navbar ul {
-        flex-direction: column;
+        flex-direction: initial;
         padding: 10px;
     }
 
