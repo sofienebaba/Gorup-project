@@ -184,7 +184,8 @@ p {
     }
 
     .navbar ul {
-        flex-direction: initial;
+       flex-wrap:wrap;
+        justify-content:center;
         padding: 10px;
     }
 
